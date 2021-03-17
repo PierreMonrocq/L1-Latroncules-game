@@ -1,0 +1,8 @@
+Module Plateau
+==============
+
+**Module qui regroupe l'ensemble des fonctions qui concernent le plateau de jeu.**
+
+.. automodule:: plateau
+   :members:
+   

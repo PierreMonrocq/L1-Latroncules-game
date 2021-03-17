@@ -1,0 +1,32 @@
+.. Latroncules documentation master file, created by
+   sphinx-quickstart on Sat Apr 15 14:51:32 2017.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to Latroncules's documentation!
+=======================================
+Documentation du projet de methodologie "Latroncules"
+
+Contenu:
+
+.. toctree::
+   :maxdepth: 2
+   
+   main
+   plateau
+   pions
+   gestionnaire_evenements
+   gestionnaire_images
+   sauvegarde
+   debug
+   relance
+   
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

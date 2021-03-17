@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Module Plateau &#8212; Latroncules 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Module Pions" href="pions.html" />
+    <link rel="prev" title="Module Main" href="main.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-plateau">
+<h1>Module Plateau<a class="headerlink" href="#module-plateau" title="Permalink to this headline">¶</a></h1>
+<p><strong>Module qui regroupe l&#8217;ensemble des fonctions qui concernent le plateau de jeu.</strong></p>
+<span class="target" id="module-plateau"></span><dl class="function">
+<dt id="plateau.ajouter_id_element">
+<code class="descclassname">plateau.</code><code class="descname">ajouter_id_element</code><span class="sig-paren">(</span><em>canvas</em>, <em>tag</em>, <em>element</em><span class="sig-paren">)</span><a class="headerlink" href="#plateau.ajouter_id_element" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Ajoute un tag (identification Tkinter) a un element</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>canvas</strong> (<em>objet Tkinter</em>) &#8211; canvas Tkinter</li>
+<li><strong>tag</strong> (<em>chaine caractéres</em>) &#8211; tag à associer à l&#8217;objet</li>
+<li><strong>element</strong> &#8211; variable</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="plateau.correspond">
+<code class="descclassname">plateau.</code><code class="descname">correspond</code><span class="sig-paren">(</span><em>x</em>, <em>y</em><span class="sig-paren">)</span><a class="headerlink" href="#plateau.correspond" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Associe une valeur en pixel x,y à une case du plateau plat</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x</strong> (<em>entier</em>) &#8211; valeur x en pixel (abscisse)</li>
+<li><strong>y</strong> (<em>entier</em>) &#8211; valeur y en pixel (abscisse)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">tuple</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">valeur des cases i et j</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&gt;&gt;&gt;correspond(350,850)
+(5,4)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="plateau.couleur_case">
+<code class="descclassname">plateau.</code><code class="descname">couleur_case</code><span class="sig-paren">(</span><em>i</em>, <em>j</em><span class="sig-paren">)</span><a class="headerlink" href="#plateau.couleur_case" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Détermine la couleur d&#8217;une case dans le plateau au coordonnées (i,j)</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>i</strong> (<em>entier</em>) &#8211; coordonnée i correspond à l&#8217;abscisse d&#8217;une case</li>
+<li><strong>j</strong> (<em>entier</em>) &#8211; coordonnée j correspond à l&#8217;ordonnée d&#8217;une case</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">booléen</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">True pour la couleur blanc, False pour la couleur noire</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="plateau.dans_plateau">
+<code class="descclassname">plateau.</code><code class="descname">dans_plateau</code><span class="sig-paren">(</span><em>x</em>, <em>y</em><span class="sig-paren">)</span><a class="headerlink" href="#plateau.dans_plateau" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Verifie si des coordonnées x,y sont bien comprises dans le plateau de jeu</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x</strong> (<em>entier</em>) &#8211; coordonnée x</li>
+<li><strong>y</strong> (<em>entier</em>) &#8211; coordonnée y</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">booléen</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">True dans le plateau sinon False en dehors</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="plateau.generation_plateau_iso">
+<code class="descclassname">plateau.</code><code class="descname">generation_plateau_iso</code><span class="sig-paren">(</span><em>canvas</em>, <em>image1</em>, <em>image2</em>, <em>*debug</em><span class="sig-paren">)</span><a class="headerlink" href="#plateau.generation_plateau_iso" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Génère le plateau isometrique dans un canvas</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>canvas</strong> (<em>objet Tkinter</em>) &#8211; canvas Tkinter</li>
+<li><strong>image1</strong> (<em>image convertie</em>) &#8211; image d&#8217;une case isometrique</li>
+<li><strong>image2</strong> (<em>image convertie</em>) &#8211; image d&#8217;une case isometrique</li>
+<li><strong>*debug</strong> &#8211; <p>affiche des informations de debug dans la console</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="plateau.generation_plateau_plat">
+<code class="descclassname">plateau.</code><code class="descname">generation_plateau_plat</code><span class="sig-paren">(</span><em>canvas</em>, <em>image1</em>, <em>image2</em>, <em>*debug</em><span class="sig-paren">)</span><a class="headerlink" href="#plateau.generation_plateau_plat" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Génère le plateau plat dans un canvas</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>canvas</strong> (<em>objet Tkinter</em>) &#8211; canvas Tkinter</li>
+<li><strong>image1</strong> (<em>image convertie</em>) &#8211; image d&#8217;une case plate</li>
+<li><strong>image2</strong> (<em>image convertie</em>) &#8211; image d&#8217;une case plate</li>
+<li><strong>*debug</strong> &#8211; <p>affiche des informations de debug dans la console</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="plateau.generer_plateaux">
+<code class="descclassname">plateau.</code><code class="descname">generer_plateaux</code><span class="sig-paren">(</span><em>canvas</em>, <em>image1</em>, <em>image2</em>, <em>image3</em>, <em>image4</em>, <em>*debug</em><span class="sig-paren">)</span><a class="headerlink" href="#plateau.generer_plateaux" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Génère les plateau isometrique et plat</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>canvas</strong> (<em>objet Tkinter</em>) &#8211; canvas Tkinter</li>
+<li><strong>image1</strong> (<em>image convertie</em>) &#8211; image d&#8217;une case plate</li>
+<li><strong>image2</strong> (<em>image convertie</em>) &#8211; image d&#8217;une case plate</li>
+<li><strong>image3</strong> (<em>image convertie</em>) &#8211; image d&#8217;une case plate</li>
+<li><strong>image4</strong> (<em>image convertie</em>) &#8211; image d&#8217;une case plate</li>
+<li><strong>*debug</strong> &#8211; <p>affiche des informations de debug dans la console (optionel)</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="plateau.position_cases_iso">
+<code class="descclassname">plateau.</code><code class="descname">position_cases_iso</code><span class="sig-paren">(</span><em>i</em>, <em>j</em><span class="sig-paren">)</span><a class="headerlink" href="#plateau.position_cases_iso" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Associes des coordonnées à des cases par rapport à des valeurs en pixel et renvoit leurs positions 
+dans un espace isometrique</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>i</strong> (<em>entier</em>) &#8211; coordonnée i correspond à l&#8217;abscisse d&#8217;une case</li>
+<li><strong>j</strong> &#8211; coordonnée j correspond à l&#8217;ordonné d&#8217;une case</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">tuple</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">position des cases i,j en pixel</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&gt;&gt;&gt;position_cases_iso(0,0)
+(450,250)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="plateau.position_cases_plat">
+<code class="descclassname">plateau.</code><code class="descname">position_cases_plat</code><span class="sig-paren">(</span><em>i</em>, <em>j</em><span class="sig-paren">)</span><a class="headerlink" href="#plateau.position_cases_plat" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Associes des coordonnées à des cases par rapport à des valeurs en pixel et renvoit leurs positions 
+dans un espace plat</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>i</strong> (<em>entier</em>) &#8211; coordonnée i correspond à l&#8217;abscisse d&#8217;une case</li>
+<li><strong>j</strong> &#8211; coordonnée j correspond à l&#8217;ordonné d&#8217;une case</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">tuple</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><p>position des cases i,j en pixel
+&gt;&gt;&gt;position_cases_iso(0,0)</p>
+<blockquote>
+<div><p>(450,250)</p>
+</div></blockquote>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="plateau.recuperer_id_element">
+<code class="descclassname">plateau.</code><code class="descname">recuperer_id_element</code><span class="sig-paren">(</span><em>canvas</em>, <em>tag</em><span class="sig-paren">)</span><a class="headerlink" href="#plateau.recuperer_id_element" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Recupere un element à partir d&#8217;un tag et renvoit son id</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>canvas</strong> (<em>objet Tkinter</em>) &#8211; canvas Tkinter</li>
+<li><strong>tag</strong> (<em>chaine caractéres</em>) &#8211; tag à associer à l&#8217;objet</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">id tkinter</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="plateau.supprimer_indicateur">
+<code class="descclassname">plateau.</code><code class="descname">supprimer_indicateur</code><span class="sig-paren">(</span><em>canvas</em>, <em>nom</em><span class="sig-paren">)</span><a class="headerlink" href="#plateau.supprimer_indicateur" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Supprime un indicateur dans un canvas</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>canvas</strong> (<em>objet Tkinter</em>) &#8211; canvas Tkinter</li>
+<li><strong>nom</strong> (<em>chaine caractéres</em>) &#8211; tag associé à l&#8217;objet</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="main.html" title="previous chapter">Module Main</a></li>
+      <li>Next: <a href="pions.html" title="next chapter">Module Pions</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/plateau.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Pierre Monrocq.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="_sources/plateau.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

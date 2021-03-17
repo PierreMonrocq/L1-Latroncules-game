@@ -1,0 +1,6 @@
+Module Pions
+============
+**Module qui regroupe l'ensemble des fonctions qui concernent les pions.**
+
+.. automodule:: pions
+   :members:

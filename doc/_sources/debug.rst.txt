@@ -1,0 +1,6 @@
+Module Debug
+============
+**Module qui contient quelques fonctions de debogage.**
+
+.. automodule:: debug
+   :members:

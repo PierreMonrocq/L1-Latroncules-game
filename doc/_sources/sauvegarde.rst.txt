@@ -1,0 +1,6 @@
+Module Sauvegarde
+=================
+**Module qui regroupe l'ensemble des fonctions de sauvegarde d'une partie.**
+
+.. automodule:: sauvegarde
+   :members:

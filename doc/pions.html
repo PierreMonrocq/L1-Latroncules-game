@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Module Pions &#8212; Latroncules 1.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Module Gestionnaire d’événements" href="gestionnaire_evenements.html" />
+    <link rel="prev" title="Module Plateau" href="plateau.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-pions">
+<h1>Module Pions<a class="headerlink" href="#module-pions" title="Permalink to this headline">¶</a></h1>
+<p><strong>Module qui regroupe l&#8217;ensemble des fonctions qui concernent les pions.</strong></p>
+<span class="target" id="module-pions"></span><dl class="function">
+<dt id="pions.afficher_indicateur">
+<code class="descclassname">pions.</code><code class="descname">afficher_indicateur</code><span class="sig-paren">(</span><em>canvas</em>, <em>i</em>, <em>j</em>, <em>nom</em>, <em>image</em><span class="sig-paren">)</span><a class="headerlink" href="#pions.afficher_indicateur" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Affiche un indicateur à l&#8217;emplacement de la selection</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>canvas</strong> (<em>objet tkinter</em>) &#8211; canvas tkinter</li>
+<li><strong>grille</strong> (<em>liste</em>) &#8211; grille du plateau</li>
+<li><strong>i</strong> (<em>entier</em>) &#8211; coordonnée de départ i</li>
+<li><strong>j</strong> (<em>entier</em>) &#8211; coordonnée de départ j</li>
+<li><strong>nom</strong> &#8211; nom de l&#8217;indicateur</li>
+<li><strong>image</strong> (<em>image</em>) &#8211; image convertie tkinter</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pions.afficher_pions_plateau_iso">
+<code class="descclassname">pions.</code><code class="descname">afficher_pions_plateau_iso</code><span class="sig-paren">(</span><em>grille</em>, <em>canvas</em><span class="sig-paren">)</span><a class="headerlink" href="#pions.afficher_pions_plateau_iso" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>affiche le plateau isometrique a partir de la grille</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>grille</strong> (<em>liste</em>) &#8211; grille du plateau</li>
+<li><strong>canvas</strong> (<em>objet tkinter</em>) &#8211; canvas tkinter</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pions.afficher_pions_plateau_plat">
+<code class="descclassname">pions.</code><code class="descname">afficher_pions_plateau_plat</code><span class="sig-paren">(</span><em>grille</em>, <em>canvas</em><span class="sig-paren">)</span><a class="headerlink" href="#pions.afficher_pions_plateau_plat" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>affiche le plateau isometrique a partir de la grille</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>grille</strong> (<em>liste</em>) &#8211; grille du plateau</li>
+<li><strong>canvas</strong> (<em>objet tkinter</em>) &#8211; canvas tkinter</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pions.ajouter_pions_grille">
+<code class="descclassname">pions.</code><code class="descname">ajouter_pions_grille</code><span class="sig-paren">(</span><em>n</em><span class="sig-paren">)</span><a class="headerlink" href="#pions.ajouter_pions_grille" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Ajoute les pions a une grille de dimension n</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>n</strong> (<em>entier</em>) &#8211; dimension</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">une grille de dimension n</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">liste</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pions.deplacer_pion">
+<code class="descclassname">pions.</code><code class="descname">deplacer_pion</code><span class="sig-paren">(</span><em>event</em>, <em>fenetre</em>, <em>grille</em>, <em>can</em><span class="sig-paren">)</span><a class="headerlink" href="#pions.deplacer_pion" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>deplace un pion</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>event</strong> (<em>evenement tkinter</em>) &#8211; evenement tkinter</li>
+<li><strong>fenetre</strong> (<em>fenetre tkinter</em>) &#8211; fenetre tkinter</li>
+<li><strong>can</strong> (<em>objet tkinter</em>) &#8211; canvas tkinter</li>
+<li><strong>grille</strong> (<em>liste</em>) &#8211; grille du plateau</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pions.deplacer_pions">
+<code class="descclassname">pions.</code><code class="descname">deplacer_pions</code><span class="sig-paren">(</span><em>canvas</em>, <em>grille</em>, <em>i</em>, <em>j</em>, <em>x</em>, <em>y</em>, <em>*debug</em><span class="sig-paren">)</span><a class="headerlink" href="#pions.deplacer_pions" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>déplace un pion sur le plateau</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>canvas</strong> (<em>objet tkinter</em>) &#8211; canvas tkinter</li>
+<li><strong>grille</strong> (<em>liste</em>) &#8211; grille du plateau</li>
+<li><strong>i</strong> (<em>entier</em>) &#8211; coordonnée de départ i</li>
+<li><strong>j</strong> (<em>entier</em>) &#8211; coordonnée de départ j</li>
+<li><strong>x</strong> (<em>entier</em>) &#8211; coordonnée d&#8217;arrivé x</li>
+<li><strong>y</strong> (<em>entier</em>) &#8211; coordonnée d&#8217;arrivé y</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">grille</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">liste</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pions.generer_grille_pions">
+<code class="descclassname">pions.</code><code class="descname">generer_grille_pions</code><span class="sig-paren">(</span><em>n</em>, <em>char</em><span class="sig-paren">)</span><a class="headerlink" href="#pions.generer_grille_pions" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>genere une grille de dimension n avec comme lettre char</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>n</strong> (<em>entier</em>) &#8211; dimension</li>
+<li><strong>char</strong> (<em>caractére</em>) &#8211; caractére à mettre dans la grille</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">une grille de dimension n</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">liste</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pions.pion_captures">
+<code class="descclassname">pions.</code><code class="descname">pion_captures</code><span class="sig-paren">(</span><em>grille</em>, <em>pion</em><span class="sig-paren">)</span><a class="headerlink" href="#pions.pion_captures" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>fonction qui gère la capture d&#8217;un pion</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>grille</strong> (<em>evenement tkinter</em>) &#8211; grille du plateau</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">nombre de pion restant</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">entier</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="pions.selectionner_pion">
+<code class="descclassname">pions.</code><code class="descname">selectionner_pion</code><span class="sig-paren">(</span><em>event</em>, <em>grille</em>, <em>can</em>, <em>*debug</em><span class="sig-paren">)</span><a class="headerlink" href="#pions.selectionner_pion" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>selectionne un pion</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>event</strong> (<em>evenement tkinter</em>) &#8211; evenement tkinter</li>
+<li><strong>can</strong> &#8211; canvas tkinter</li>
+<li><strong>grille</strong> (<em>liste</em>) &#8211; grille du plateau</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="plateau.html" title="previous chapter">Module Plateau</a></li>
+      <li>Next: <a href="gestionnaire_evenements.html" title="next chapter">Module Gestionnaire d&#8217;événements</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/pions.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Pierre Monrocq.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="_sources/pions.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

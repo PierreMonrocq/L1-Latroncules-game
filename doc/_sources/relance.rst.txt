@@ -1,0 +1,6 @@
+Module Relance
+===========
+**Module qui contient une fonction de relance d'une nouvelle partie.**
+
+.. automodule:: relance
+   :members:

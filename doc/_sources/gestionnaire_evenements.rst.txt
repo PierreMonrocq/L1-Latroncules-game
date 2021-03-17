@@ -1,0 +1,6 @@
+Module Gestionnaire d'événements
+================================
+**Module qui regroupe differentes fonctions liées à un événement.**
+
+.. automodule:: gestionnaire_evenements
+   :members:

@@ -1,0 +1,6 @@
+Module Menu
+===========
+**Module qui contient quelques fonctions de mise en services du menu et des options.**
+
+.. automodule:: menu
+   :members:
